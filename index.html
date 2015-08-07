@@ -1,15 +1,9 @@
 ---
 layout: index_layout
 title: BLOG
----
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
+---　
+<!--<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>-->
 　　
-　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　
-</ul>
-
 <!-- Post -->
 {% for post in site.posts %}
       <article class="is-post is-post-excerpt">
