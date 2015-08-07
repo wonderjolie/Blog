@@ -1,24 +1,31 @@
 ---
 layout: index_layout
 title: BLOG
----　
-<!--<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>-->
-　　
-<!-- Post -->
+---　 
+<!--<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>--> 
+　　 
+<!-- Post --> 
+<!--
 {% for post in site.posts %}
-      <article class="is-post is-post-excerpt">
-        <header>
-          <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-          <span class="byline">A free, fully responsive HTML5 site template by AJ for HTML5 UP</span> </header>
-        <div class="info"> <span class="date"><span class="month">{{ post.month }}</span> <span class="day">{{ post.day }}</span><span class="year">, {{ post.year }}</span></span>
-          <ul class="stats">
-            <li><a href="#" class="link-icon24 link-icon24-1">16</a></li>
-            <li><a href="#" class="link-icon24 link-icon24-2">32</a></li>
-            <li><a href="#" class="link-icon24 link-icon24-3">64</a></li>
-            <li><a href="#" class="link-icon24 link-icon24-4">128</a></li>
-          </ul>
-        </div>
-        <a href="#" class="image image-full"><img src="{{ site.baseurl }}/images/n33-robot-invader.jpg" alt="" /></a>
-		<p>{{ post.excerpt }}</p>
-            </article>
+<article class="is-post is-post-excerpt">
+  <header>
+    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <span class="byline">A free, fully responsive HTML5 site template by AJ for HTML5 UP</span> </header>
+  <div class="info"> <span class="date"><span class="month">{{ post.month }}</span> <span class="day">{{ post.day }}</span><span class="year">, {{ post.year }}</span></span>
+    <ul class="stats">
+      <li><a href="#" class="link-icon24 link-icon24-1">16</a></li>
+      <li><a href="#" class="link-icon24 link-icon24-2">32</a></li>
+      <li><a href="#" class="link-icon24 link-icon24-3">64</a></li>
+      <li><a href="#" class="link-icon24 link-icon24-4">128</a></li>
+    </ul>
+  </div>
+  <a href="#" class="image image-full"><img src="{{ site.baseurl }}/images/n33-robot-invader.jpg" alt="" /></a>
+  <p>{{ post.excerpt }}</p>
+</article>
 {% endfor %}
+-->
+<ul>
+　　{% for post in site.posts %}
+　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　{% endfor %}
+</ul>
