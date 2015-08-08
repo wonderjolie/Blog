@@ -1,2 +1,3 @@
-baseurl: http://wonderjolie.github.io
+baseurl: /Blog
 markdown: rdiscount
+title: WonderJolie
