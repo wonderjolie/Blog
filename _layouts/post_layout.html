@@ -6,34 +6,24 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
-<script src="/Blog/js/jquery.min.js"></script>
-<script src="/Blog/js/config.js"></script>
-<script src="/Blog/js/skel.min.js"></script>
-<script src="/Blog/js/skel-panels.min.js"></script>
+<!--<link rel="stylesheet" href="{{ site.baseurl }}/css/blog_content.css" />-->
+<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/js/config.js"></script>
+<script src="{{ site.baseurl }}/js/skel.min.js"></script>
+<script src="{{ site.baseurl }}/js/skel-panels.min.js"></script>
 <noscript>
-<link rel="stylesheet" href="/Blog/css/skel-noscript.css" />
-<link rel="stylesheet" href="/Blog/css/style.css" />
-<link rel="stylesheet" href="/Blog/css/style-desktop.css" />
-<link rel="stylesheet" href="/Blog/css/style-wide.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/skel-noscript.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/style-desktop.css" />
+<link rel="stylesheet" href="{{ site.baseurl }}/css/style-wide.css" />
 </noscript>
+
 </head><body class="left-sidebar">
 <!-- Wrapper -->
 <div id="wrapper"> 
   <!-- Content -->
   <div id="content">
-    <div id="content-inner">
-<article class="is-post is-post-excerpt">
-  <header>
-    <h2><a href="/Blog/2015/08/08/problems.html">技术类问题集合</a></h2>
-    <span class="byline">在编码过程中遇到的奇怪的问题，自己记录一下</span> </header>
-  <div class="info"> <span class="date"><span class="month">AUG</span> <span class="day">08</span><br><span class="month">2015 </span></span>
-  </div>
-  <a href="#" class="image image-left"><img src="images/11.jpg" alt="" /></a>
-  <p> <h2>Jekyll无法正确解析</h2>
-</p>
-</article>
-<br><br>
-</div>
+    <div id="content-inner">{{ content }}</div>
   </div>
   <!-- Sidebar -->
   <div id="sidebar"> 
@@ -50,13 +40,6 @@
         <li><a href="#">Contact Me</a></li>
       </ul>
     </nav>
-    
-    <!-- Search -->
-    <section class="is-search">
-      <form method="post" action="#">
-        <input type="text" class="text" name="search" placeholder="Search" />
-      </form>
-    </section>
     
     <!-- Text -->
     <section class="is-text-style1">

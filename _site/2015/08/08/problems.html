@@ -6,6 +6,7 @@
 <meta name="description" content="" />
 <meta name="keywords" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+<!--<link rel="stylesheet" href="/Blog/css/blog_content.css" />-->
 <script src="/Blog/js/jquery.min.js"></script>
 <script src="/Blog/js/config.js"></script>
 <script src="/Blog/js/skel.min.js"></script>
@@ -16,23 +17,26 @@
 <link rel="stylesheet" href="/Blog/css/style-desktop.css" />
 <link rel="stylesheet" href="/Blog/css/style-wide.css" />
 </noscript>
+
 </head><body class="left-sidebar">
 <!-- Wrapper -->
 <div id="wrapper"> 
   <!-- Content -->
   <div id="content">
-    <div id="content-inner">
-<article class="is-post is-post-excerpt">
+    <div id="content-inner"><h2>Jekyll无法正确解析</h2>
+
+<blockquote><p>这个问题曾经困扰了我半个下午，弄了好半天才明白。
+Jekyll解析对编码格式好像很敏感。我用Nodepad++编写了网页代码，用UTF-8格式储存，显示出的页面特别奇怪，把编码格式换成<strong>UTF-8无BOM格式</strong>就解决了。
+虽然解决了问题，但是依然不太理解。</p></blockquote>
+
+<p><article class="is-post is-post-excerpt">
   <header>
-    <h2><a href="/Blog/2015/08/08/problems.html">技术类问题集合</a></h2>
-    <span class="byline">在编码过程中遇到的奇怪的问题，自己记录一下</span> </header>
-  <div class="info"> <span class="date"><span class="month">AUG</span> <span class="day">08</span><br><span class="month">2015 </span></span>
+  <div class="info"> <span class="date"><span class="month">12</span> <span class="day">12</span><br><span class="month">12 </span></span>
+    <ul class="stats">
+      <!--TAG Related-->
+    </ul>
   </div>
-  <a href="#" class="image image-left"><img src="images/11.jpg" alt="" /></a>
-  <p> <h2>Jekyll无法正确解析</h2>
-</p>
-</article>
-<br><br>
+</article></p>
 </div>
   </div>
   <!-- Sidebar -->
@@ -50,13 +54,6 @@
         <li><a href="#">Contact Me</a></li>
       </ul>
     </nav>
-    
-    <!-- Search -->
-    <section class="is-search">
-      <form method="post" action="#">
-        <input type="text" class="text" name="search" placeholder="Search" />
-      </form>
-    </section>
     
     <!-- Text -->
     <section class="is-text-style1">

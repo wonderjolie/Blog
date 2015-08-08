@@ -1,0 +1,58 @@
+#content-inner h1, 
+#content-inner h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: inherit;
+	font-weight: 300;
+	line-height: 1.1;
+	color: inherit
+}
+#content-inner h1, 
+#content-inner h2, 
+#content-inner h3 {
+	margin-top: 21px;
+	margin-bottom: 10.5px
+}
+#content-inner h4, 
+#content-inner h5, 
+#content-inner h6 {
+	margin-top: 10.5px;
+	margin-bottom: 10.5px
+}
+#content-inner h1{
+	font-size: 39px
+}
+#content-inner h2{
+	font-size: 32px
+}
+#content-inner h3{
+	font-size: 26px
+}
+#content-inner h4,{
+	font-size: 19px
+}
+#content-inner h5{
+	font-size: 15px
+}
+#content-inner h6{
+	font-size: 13px
+}
+#content-inner p {
+	margin: 0 0 10.5px
+}
+#content-inner blockquote {
+	padding: 10.5px 21px;
+	margin: 0 0 21px;
+	border-left: 5px solid #eee
+}
+#content-inner blockquote p {
+	font-size: 18.75px;
+	font-weight: 300;
+	font-style:normal;
+	line-height: 1.25
+}
+#content-inner blockquote p:last-child {
+	margin-bottom: 0
+}
+#content-inner b,
+#content-inner strong  {
+	font-weight: bold
+}

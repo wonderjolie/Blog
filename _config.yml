@@ -1,3 +1,2 @@
 baseurl: /Blog
 markdown: rdiscount
-highlighter: pygments
