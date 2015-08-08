@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
   <title>
-  技术类问题集合
+  WebGL学习笔记01
   </title>
 
   <!-- CSS -->
@@ -84,13 +84,49 @@
       </div>
 
       <div class="container content">
-        <h1><strong>技术类问题集合</strong></h1>
+        <h1><strong>WebGL学习笔记01</strong></h1>
 
-<h2>Jekyll无法正确解析</h2>
+<h2>WebGL框架初始化</h2>
 
-<blockquote><p>这个问题曾经困扰了我半个下午，弄了好一阵才明白。
-Jekyll解析对编码格式好像很敏感。我用Nodepad++编写了网页代码，用UTF-8格式储存，显示出的页面特别奇怪，把编码格式换成<strong>UTF-8无BOM格式</strong>就解决了。
-虽然解决了问题，但是依然不太理解。</p></blockquote>
+<p>WebGL的初始框架包含一个HTML文件和一个JavaScript文件实现了一个页面全屏的初始着色。HTML文件中定义了一个canvas用于绘图，并且将canvas放置在页面的左上角。JavaScript获取到canvas，并将之填充为黑色。</p>
+
+<xmp>
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEBGL TEST</title>
+<script src="script.js" type="text/javascript"></script>
+</head>
+<body leftmargin="0" topmargin="0">
+<canvas id="canvas"></canvas>
+</body>
+</html>
+</xmp>
+
+
+
+
+<hr/>
+
+
+<pre><code class="JavaScript">onload=function(){
+    //获取canvas
+    var c=document.getElementById('canvas');
+    //定义canvas的宽度和高度，这里设置为全屏模式
+    c.width=window.innerWidth;
+    c.height=window.innerHeight;
+    //获取WebGL的相关context
+    var gl=c.getContext('webgl')||c.getContext('experimental-webgl');
+    //初始化颜色为黑色
+    gl.clearColor(0.0, 0.0, 0.0, 1.0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+}
+</code></pre>
+
+<hr />
+
+<p>渲染结果：
+<a href="http://wonderjolie.github.io/WebGL_TP/01_init/index.html">DEMO</a></p>
 
       </div>
     </div>
