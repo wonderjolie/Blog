@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+  C/C++技术类面试题集合
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Blog/css/post/poole.css">
+  <link rel="stylesheet" href="/Blog/css/post/syntax.css">
+  <link rel="stylesheet" href="/Blog/css/post/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+</head>
+
+
+  <body>
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p></p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/Blog/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+
+    <a class="sidebar-nav-item" href="/archive/v.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2015. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/Blog/" title="Home">WonderJolie</a>
+			<small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <h1><strong>C/C++技术类面试题集合（C/C++语言基础）</strong></h1>
+
+<p>本文摘选自《C/C++程序员面试宝典》的技术类面试题，包含C/C++的语言基础、数据结构、算法、软件工程、数据库、操作系统、计算机网络以及部分思维拓展题。</p>
+
+<h2>C++中有哪几种基本数据类型？</h2>
+
+<blockquote><p>C++中的基础数据类型分为3种：整数型、浮点型和void型。</p></blockquote>
+
+<hr />
+
+<h2>整型有哪几种形式？各种形式有什么区别？</h2>
+
+<blockquote><p>表示整数、字符和布尔值的算术类型合称为整形，整形根据修饰符细分为13种形式：
+ 1. char
+ 2. unsigned char
+ 3. signed char
+ 4. int
+ 5. unsigned int
+ 6. signed int
+ 7. short int
+ 8. unsigned short int
+ 9. signed short int
+ 10. long int
+ 11. signed long int
+ 12. bool
+ 它们的区分呢主要体现在类型名、长度和表示范围几个方面。</p></blockquote>
+
+<hr />
+
+<h2>C++中有哪些常量？</h2>
+
+<blockquote><p>常量是不可以改变的数据，常量按照数据类型主要分为整型常量、浮点型常量、字符型常量、字符串常量、转义字符常量、地址常量6种。</p></blockquote>
+
+<hr />
+
+<h2>常量与变量有哪些区别？</h2>
+
+<blockquote><p>常量是不可以改变值的量，变量是可以改变值的量，常量在定义时必须初始化，变量可以在定义时不初始化。常量不可以寻址，它的地址不允许赋给非常量指针，变量可以寻址。常量有相对较高的编译执行效率。</p></blockquote>
+
+<hr />
+
+<h2>操作符有哪些分类？</h2>
+
+<blockquote><p>表达式是由操作符、操作数字和标点符号组成的序列，目的是为了说明一个运算过程，操作符说明了表达式的主要目的，并且计算返回结果。
+按照功能区分操作符有：算术操作符、关系操作符、逻辑操作符、位操作符、赋值操作符、自增和自减操作符、箭头操作符、条件操作符、sizeof操作符、逗号操作符等10类。
+按照操作数区分操作符有：一元操作符、二元操作符和三元操作符等3类。</p></blockquote>
+
+<hr />
+
+<h2>操作符优先级对运算结果有什么影响？</h2>
+
+<blockquote><p>优先级决定了表达式的运算顺序，不同优先级的运算符的不同使用会影响表达式的运算结果。</p></blockquote>
+
+<hr />
+
+<h2>逻辑操作与其他操作的关系</h2>
+
+<blockquote><p>逻辑操作只返回true或false这两种值，它们可以用来作判断条件，逻辑操作符不会改变被操作数的值。</p></blockquote>
+
+<hr />
+
+<h2>自增自减前操作与后操作的区别</h2>
+
+<blockquote><p>前自增自减操作的优先级大于赋值运算符（=），而后自增自减操作的优先级小于赋值运算符，后自增自减操作后表达式的值不会发生改变。</p></blockquote>
+
+<hr />
+
+<h2>指针自增自减有什么不同？</h2>
+
+<blockquote><p>变量的自增自减是修改变量的值，指针的自增自减是修改指针的指向地址。</p></blockquote>
+
+<hr />
+
+<h2>什么是左值和右值？</h2>
+
+<blockquote><p>变量是左值，可以出现在赋值语句的左边。数字字面值是右值，不能被赋值。</p></blockquote>
+
+<hr />
+
+<h2>什么是变量？</h2>
+
+<blockquote><p>变量是在程序的运行过程中随时可以发生变化的量，变量是在电脑内存里可修改的、存在值的命名空间。</p></blockquote>
+
+<hr />
+
+<h2>变量有哪几种初始化方式？</h2>
+
+<blockquote><p>变量初始化指创建变量并同时给它赋初始值，而赋值则是擦除对象的当前值并用新值代替。其中，直接初始化的语法更加灵活而且执行效率更高。</p></blockquote>
+
+<hr />
+
+<h2>什么是变量的声明和定义？</h2>
+
+<blockquote><p>C++程序通常由许多文件组成。为了让多个文件访问相同的变量，C++区分了声明和定义。定义和声明有相同的时候，但声明的主要目的是表明变量的类型和名称，而定义的主要目的是为变量分配存储空间。</p></blockquote>
+
+<hr />
+
+<h2>C++中有哪几种作用域？</h2>
+
+<blockquote><p>作用域是程序的一段区域，作用域用于区别变量名的不同有效范围，分为全局作用域、局部作用域和语句作用域。一个变量名可以和不同作用域中的不同实体相关联。</p></blockquote>
+
+<hr />
+
+<h2>变量有哪几种存储类型？</h2>
+
+<blockquote><p>在C++中，变量的存储类型分为自动类型、寄存器类型、静态类型、外部类型4种。</p></blockquote>
+
+<hr />
+
+<h2>什么是引用？</h2>
+
+<blockquote><p>引用是对象的另一个名字，在实际程序中，引用主要用作函数的形式参数来使用。</p></blockquote>
+
+<hr />
+
+<h2>如何使用const引用与非const引用？</h2>
+
+<blockquote><p>const引用可以读取但是不可以修改引用对象，任何对const引用进行赋值都是不合法的，它适用于指向const对象的引用；而非const的引用不适用于指向const对象的引用，可以修改引用和被引用对象的值。</p></blockquote>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
